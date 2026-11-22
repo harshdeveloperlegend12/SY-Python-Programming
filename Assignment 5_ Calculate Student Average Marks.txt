@@ -1,0 +1,41 @@
+
+n = int(input("Enter number of students: "))
+
+if n <= 0:
+    print("Number of students must be positive")
+else:
+    class_total = 0
+
+    for i in range(n):
+        print("Student", i + 1)
+        total = 0
+
+        for j in range(5):
+            marks = float(input("Enter test marks: "))
+            total += marks
+
+        average = total / 5
+        print("Average marks:", average)
+        class_total += total
+
+    overall = class_total / (n * 5)
+    print("Class average:", overall)
+
+
+----------------Output------------------
+Enter number of students: 2
+Student 1
+Enter test marks: 80
+Enter test marks: 70
+Enter test marks: 90
+Enter test marks: 85
+Enter test marks: 75
+Average marks: 80.0
+Student 2
+Enter test marks: 60
+Enter test marks: 70
+Enter test marks: 80
+Enter test marks: 90
+Enter test marks: 100
+Average marks: 80.0
+Class average: 80.0

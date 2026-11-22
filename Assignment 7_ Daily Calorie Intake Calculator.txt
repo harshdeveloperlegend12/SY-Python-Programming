@@ -1,0 +1,19 @@
+
+def calculate_calories(carbs, fats, proteins):
+    total = (carbs * 4) + (fats * 9) + (proteins * 4)
+    return total
+
+carbs = float(input("Enter carbs in grams: "))
+fats = float(input("Enter fats in grams: "))
+proteins = float(input("Enter proteins in grams: "))
+
+calories = calculate_calories(carbs, fats, proteins)
+
+print("Total calorie intake:", calories)
+
+
+------------------Output---------------
+Enter carbs in grams: 100
+Enter fats in grams: 50
+Enter proteins in grams: 60
+Total calorie intake: 1090.0

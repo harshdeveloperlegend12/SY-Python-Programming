@@ -1,0 +1,26 @@
+
+assignments = ["Python", "Maths", "Physics"]
+
+print("Original list:", assignments)
+
+new = input("Enter new assignment: ")
+assignments.append(new)
+
+print("After adding:", assignments)
+
+completed = input("Enter completed assignment: ")
+
+if completed in assignments:
+    assignments.remove(completed)
+else:
+    print("Assignment not found")
+
+print("Updated list:", assignments)
+
+
+------------------Output-----------------
+Original list: ['Python', 'Maths', 'Physics']
+Enter new assignment: Chemistry
+After adding: ['Python', 'Maths', 'Physics', 'Chemistry']
+Enter completed assignment: Maths
+Updated list: ['Python', 'Physics', 'Chemistry']

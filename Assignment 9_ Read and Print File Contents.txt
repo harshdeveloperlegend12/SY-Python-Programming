@@ -1,0 +1,20 @@
+
+try:
+    file = open("sample.txt", "r")
+
+    content = file.read()
+
+    print("File Contents:")
+    print(content)
+
+    file.close()
+
+except FileNotFoundError:
+    print("File not found!")
+
+--------------Output----------------
+
+File Contents:
+Welcome to Python Programming.
+This is Assignment 9.
+Python file handling is easy.

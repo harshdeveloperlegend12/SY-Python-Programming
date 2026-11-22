@@ -1,0 +1,35 @@
+
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4, 5]
+y = [10, 20, 15, 25, 30]
+
+plt.figure(figsize=(12, 8))
+
+# Line Plot
+plt.subplot(2, 3, 1)
+plt.plot(x, y, marker="o")
+plt.title("Line Plot")
+
+# Scatter Plot
+plt.subplot(2, 3, 2)
+plt.scatter(x, y, color="red")
+plt.title("Scatter Plot")
+
+# Box Plot
+plt.subplot(2, 3, 3)
+plt.boxplot(y)
+plt.title("Box Plot")
+
+# Bar Chart
+plt.subplot(2, 3, 4)
+plt.bar(x, y, color="green")
+plt.title("Bar Chart")
+
+# Pie Chart
+plt.subplot(2, 3, 5)
+plt.pie(y, labels=x, autopct="%1.1f%%")
+plt.title("Pie Chart")
+
+
+

@@ -1,0 +1,42 @@
+
+import math
+
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return math.pi * self.radius ** 2
+
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+class Triangle:
+    def __init__(self, base, height):
+        self.base = base
+        self.height = height
+
+    def area(self):
+        return 0.5 * self.base * self.height
+
+def calculate_area(shape):
+    return shape.area()
+
+circle = Circle(5)
+rectangle = Rectangle(4, 6)
+triangle = Triangle(4, 5)
+
+print("Circle Area:", round(calculate_area(circle), 2))
+print("Rectangle Area:", calculate_area(rectangle))
+print("Triangle Area:", calculate_area(triangle))
+
+
+---------------Output--------------
+Circle Area: 78.54
+Rectangle Area: 24
+Triangle Area: 10.0
